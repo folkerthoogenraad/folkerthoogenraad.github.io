@@ -20,3 +20,8 @@ function setMenu(menu){
     }
 
 }
+
+
+window.addEventListener("hashchange",() => {
+    setMenu(false);
+}, false);
