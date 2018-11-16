@@ -9,7 +9,7 @@ function toggleMenu(){
 function setMenu(menu){
     var d = document.getElementById("navigator");
     
-    d.style.transition = "transform 0.5s";
+    d.style.transition = "transform 0.3s";
     
     menuOpen = menu;
 
