@@ -6,12 +6,8 @@ window.addEventListener("hashchange",() => {
 function setPage(page){
     var r = new XMLHttpRequest();
     
-    //console.log("loading page " + page);
-
     r.onreadystatechange = function () {
         if (r.readyState != 4 || r.status != 200) return;
-
-        //console.log(r.responseText);
 
         document.getElementById("content").innerHTML = r.responseText;
     };
