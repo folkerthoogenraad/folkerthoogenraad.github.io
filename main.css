@@ -120,7 +120,6 @@ a{
 }
 
 .hamburgerButton {
-    background: #eee;
     width:32px;
     height:32px;
 
@@ -128,7 +127,13 @@ a{
     left:8px;
 
     position:absolute;
+}
 
+.hamburgerButton div{
+    width: 24px;
+    height: 4px;
+    background-color: #555;
+    margin: 5px auto;
 }
 
 @media only screen and (max-width: 1040px) {
