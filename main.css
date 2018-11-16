@@ -38,6 +38,23 @@ a{
     padding:80px;
     float:left;
 }
+.clear{
+    clear:both;
+    overflow:hidden;
+}
+
+.rightimage{
+    float:right;
+    max-width:40%;
+    margin-left:  16px;
+    height:auto;
+}
+.leftimage{
+    float:left;
+    max-width:40%;
+    height:auto;
+    margin-right: 16px;
+}
 
 .banner{
     width:100%;
@@ -66,6 +83,7 @@ a{
     background: #eeeeee;
     float:left;
     min-height: 550px;
+    border-bottom-right-radius: 16px;
 }
 
 .avatar{
