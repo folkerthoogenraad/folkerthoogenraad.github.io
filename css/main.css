@@ -8,6 +8,7 @@ body{
     padding:0;
     width:100%;
     overflow-x:hidden;
+    overflow-y:scroll;
     background:black;
 }
 
@@ -27,7 +28,7 @@ body{
 
 }
 .titles h2{
-    font-size: 12px;
+    font-size: 16px;
     color:#ddd;
     text-align: center;
     font-weight: lighter;
@@ -41,6 +42,11 @@ body{
     height:auto;
     font-family: inherit;
     white-space:pre;
+}
+
+@keyframes fade{
+    0% { opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @keyframes backgroundFade {
@@ -68,6 +74,10 @@ body{
     z-index:-1;
     min-height:100vh;
     animation: backgroundFade 1s ease;
+}
+
+.fade{
+    animation: fade 1s ease;
 }
 
 .header .logo{
@@ -136,9 +146,11 @@ body{
 
 .content{
     background:white;
+    color:#333;
     width:100%;
     min-height:30vh;
-    padding:20px;
+    padding:100px;
+    font-size:20px;
 }
 
 .footer{
@@ -195,10 +207,16 @@ a:visited{
         margin:0 auto;
         margin-top: 4px;
     }
+    .content{
+        padding:40px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .titles h1{
         font-size:24px;
+    }
+    .content{
+        padding:20px;
     }
 }
