@@ -34,7 +34,8 @@ function loadFile(page, callback){
  * @param {string} hash 
  */
 function setPage(page){
-    console.log("setting page " + page);
+
+    // Mind you this is very very vunerable
     loadFile("pages/" + page + ".html", (err, result)=>{
         if(err == undefined){
             window.scrollTo(0, 0);
