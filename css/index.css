@@ -14,6 +14,11 @@
     color:#dde;
 }
 
+.background{
+    background: 50% 50% / cover;
+    background-image:url("../img/index.jpg");
+    background-size:cover;
+}
 
 .quicklinks{
     margin-top:-20vh;

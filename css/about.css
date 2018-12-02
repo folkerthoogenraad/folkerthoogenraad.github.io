@@ -1,0 +1,6 @@
+
+.background{
+    background: 50% 50% / cover;
+    background-image:url("../img/veryserious.png");
+    background-size:cover;
+}
