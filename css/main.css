@@ -13,7 +13,7 @@ body{
 
 .titles{
     width:100%;
-    padding-top: 30vh;
+    padding-top: 35vh;
     padding-bottom:30vh;
     transform-style:inherit;
     text-transform: uppercase;
@@ -23,6 +23,7 @@ body{
     color:white;
     text-align: center;
     font-family: 'Poiret One', cursive;
+    margin-bottom:2px;
 
 }
 .titles h2{
@@ -31,6 +32,15 @@ body{
     text-align: center;
     font-weight: lighter;
     font-family: 'Open Sans', sans-serif;
+}
+
+.titles h1 span{
+    color:white;
+    overflow:hidden;
+    display:inline-block;
+    height:auto;
+    font-family: inherit;
+    white-space:pre;
 }
 
 @keyframes backgroundFade {
@@ -53,7 +63,7 @@ body{
     left:0;
     width:100%;
     display:block;
-    background-image:url("../img/Banner.png");
+    background-image:url("../img/index.jpg");
     background-size:cover;
     z-index:-1;
     min-height:100vh;
@@ -66,7 +76,7 @@ body{
     width:48px;
     height:48px;
 
-    margin: 6px;
+    margin: 12px;
 
     background:black;
     border-radius: 50%;
@@ -79,7 +89,7 @@ body{
     width:100%;
     top:0;
     left:0;
-    height:60px;
+    height:72px;
     background:white;
     color:black;
 }
@@ -100,7 +110,7 @@ body{
     text-transform: uppercase;
 
     padding:10px;
-    margin-top:8px;
+    margin-top:14px;
     margin-right:24px;
 }
 .menu li:hover{
@@ -110,8 +120,8 @@ body{
 
 #menu_button{
     position:fixed;
-    right:6px;
-    top:6px;
+    right:12px;
+    top:12px;
 
     width:48px;
     height:48px;
@@ -127,7 +137,7 @@ body{
 .content{
     background:white;
     width:100%;
-    min-height:100vh;
+    min-height:30vh;
     padding:20px;
 }
 
@@ -141,15 +151,26 @@ body{
     width:100%;
 }
 
+a{
+    color:inherit;
+    text-decoration: inherit;
+}
+a:hover{
+    color:inherit;
+}
+a:visited{
+    color:inherit;
+}
+
+
 @media only screen and (max-width: 768px) {
     .menu {
         position: absolute;
-        top:60px;
-        left:0px;
         width:200px;
+        left:-200px;
+        top:60px;
         min-height:calc(100vh - 60px);
         background:white;
-        transform: translateX(-100%);
     }
     .menu li{
         display:block;
@@ -173,5 +194,11 @@ body{
         background:#444;
         margin:0 auto;
         margin-top: 4px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .titles h1{
+        font-size:24px;
     }
 }

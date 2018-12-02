@@ -15,14 +15,14 @@ function setMenu(open){
     el.style.transition = "transform 0.3s ease";
 
     if(open){
-        el.style.transform = "translateX(0)";
+        el.style.transform = "translateX(100%)";
     }else{
-        el.style.transform = "translateX(-100%)";
+        el.style.transform = "translateX(0%)";
     }
 }
 
 window.addEventListener('resize', ()=>{
-    setMenu(true);
+    setMenu(false);
 });
 
 window.addEventListener('load', ()=>{
