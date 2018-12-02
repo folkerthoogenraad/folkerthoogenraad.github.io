@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif;
 }
 
 body{
@@ -19,11 +19,14 @@ body{
     transform-style:inherit;
     text-transform: uppercase;
 }
+.titles .outline{
+    text-shadow: 0px 0px 2px #444;
+}
 .titles h1{
     font-size: 48px;
     color:white;
     text-align: center;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One';
     margin-bottom:2px;
 }
 .titles h2{
@@ -31,7 +34,6 @@ body{
     color:#ddd;
     text-align: center;
     font-weight: lighter;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .titles h1 span{
@@ -66,16 +68,17 @@ body{
 }
 
 .background{
-    background: 50% 50% / cover;
-    content:"";
     position:fixed;
-    top:0;
+    top:0px;
     left:0;
-    width:100%;
-    display:block;
-    background:red;
     z-index:-1;
-    min-height:100vh;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;  
+}
+
+.background_fade{
     animation: backgroundFade 1s ease;
 }
 
@@ -151,6 +154,10 @@ body{
 }
 #menu_button:hover{
     background:#ddd;
+}
+
+.colored{
+    background:rgb(179, 38, 38);
 }
 
 .content{
