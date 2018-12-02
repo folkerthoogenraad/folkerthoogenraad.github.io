@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
+    background:black;
+}
+
+.titles{
+    width:100%;
+    padding-top: 30vh;
+    padding-bottom:30vh;
+    transform-style:inherit;
+    text-transform: uppercase;
+}
+.titles h1{
+    font-size: 48px;
+    color:white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+
+}
+@keyframes nicknameFade {
+    0% {
+        max-width:0px;
+    }
+    75% {
+        max-width:0px;
+    }
+    100% {
+        max-width:200px;
+    }
+}
+.titles h1 span{
+    color:white;
+    overflow:hidden;
+    display:inline-block;
+    height:auto;
+    font-family: inherit;
+    white-space:pre;
+}
+.titles h1 span.nickname{
+    animation: nicknameFade 1.5s ease;
+    color:#dde;
+}
+.titles h2{
+    font-size: 12px;
+    color:#ddd;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+}
+@keyframes backgroundFade {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.background{
+    background: 50% 50% / cover;
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:block;
+    background-image:url("../img/Banner.png");
+    background-size:cover;
+    z-index:-1;
+    min-height:100vh;
+    animation: backgroundFade 1s ease;
+}
+
+.header .logo{
+    display: inline-block;
+    
+    width:48px;
+    height:48px;
+
+    margin: 6px;
+
+    background:black;
+    border-radius: 50%;
+}
+
+.header{
+    position:fixed;
+    padding:0;
+    margin:0;
+    width:100%;
+    top:0;
+    left:0;
+    height:60px;
+    background:white;
+    color:black;
+}
+
+.menu{
+    list-style-type: none;
+    overflow: hidden;
+    
+    display: block;
+    float:right;
+    padding:0;
+    margin:0;
+    
+}
+.menu li{
+    display:inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    padding:10px;
+    margin-top:8px;
+    margin-right:24px;
+}
+.menu li:hover{
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.content{
+    background:white;
+    width:100%;
+    min-height:100vh;
+    padding:20px;
+}
+
+.footer{
+    position: relative;;
+    bottom:0;
+    border-top:1px solid #ddd;
+    padding:20px;
+    text-align: center;
+    color:#ddd;
+    width:100%;
+}
+
+.quicklinks{
+    margin-top:-20vh;
+    width:100%;
+    text-align:center;
+}
+
+.quicklinks *{
+    display:inline-block;
+    width:48px;
+    height:48px;
+    margin:10px;
+    border-radius: 50%;
+    background:white;
+    color:black;
+}
+.quicklinks div:hover{
+    background:#ddd;
+    cursor:pointer;
+}
