@@ -6,6 +6,14 @@
 /*
 OLD TITLE FONT: Poiret One
 */
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('/font/GeosansLight.ttf');
+}
+@font-face {
+    font-family: 'Lemon/Milk';
+    src: url('/font/LemonMilk.otf');
+}
 
 body{
     margin:0;
@@ -241,6 +249,7 @@ footer{
     clear:both;
 }
 
+
 a{
     color:inherit;
     text-decoration: inherit;
@@ -250,6 +259,11 @@ a:hover{
 }
 a:visited{
     color:inherit;
+}
+
+
+p a{
+    color: blue;
 }
 
 @media only screen and (max-width: 1280px) {
