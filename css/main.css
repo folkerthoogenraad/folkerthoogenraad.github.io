@@ -3,6 +3,10 @@
     font-family: sans-serif;
 }
 
+/*
+OLD TITLE FONT: Poiret One
+*/
+
 body{
     margin:0;
     padding:0;
@@ -14,8 +18,8 @@ body{
 
 .titles{
     width:100%;
-    padding-top: 35vh;
-    padding-bottom:30vh;
+    padding-top: 30vh;
+    padding-bottom:20vh;
     transform-style:inherit;
     text-transform: uppercase;
 }
@@ -23,17 +27,21 @@ body{
     text-shadow: 0px 0px 2px #444;
 }
 .titles h1{
-    font-size: 48px;
+    font-size: 70px;
     color:white;
     text-align: center;
-    font-family: 'Poiret One';
+    font-family: 'Lemon/Milk';
+    font-weight: 100;
     margin-bottom:2px;
 }
 .titles h2{
-    font-size: 16px;
+    font-size: 20px;
     color:#ddd;
     text-align: center;
     font-weight: lighter;
+    font-family: 'GeosansLight';
+    letter-spacing: 5px;
+    padding-left:2px;
 }
 
 .titles h1 span{
@@ -43,6 +51,20 @@ body{
     height:auto;
     font-family: inherit;
     white-space:pre;
+}
+.titles h1 span.newline{
+    display:block;
+    padding: 0px;
+    margin: -18px;
+}
+.titles h1 span.nickname{
+    animation: nicknameFade 1.5s ease;
+    opacity: 0.5;
+    font-family: 'GeosansLight';
+    letter-spacing: 70px;
+    padding-left: 58px;
+    margin-top:-10px;
+    margin-bottom:-10px;
 }
 
 @keyframes fade{
@@ -113,27 +135,38 @@ body{
     left:0;
     height:72px;
     background:white;
-    color:black;
+    color:#555;
+}
+
+.header_content{
+    /*width:100%;
+    max-width: 1024px;*/
+    padding:0 auto;
+    text-align: center;
 }
 
 .menu{
     list-style-type: none;
     overflow: hidden;
     
-    display: block;
-    float:right;
+    display: inline-block;
+    /*float:right;*/
     padding:0;
     margin:0;
+
+    font-family: 'GeosansLight';
+    letter-spacing: 5px;
+    padding-left:2px;
     
 }
 .menu li{
     display:inline-block;
-    font-weight: bold;
     text-transform: uppercase;
 
     padding:10px;
     margin-top:14px;
-    margin-right:24px;
+    margin-right:50px;
+    
 }
 .menu li:hover{
     border-bottom: 1px solid #ddd;
