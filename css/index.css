@@ -1,39 +1,88 @@
 @keyframes nicknameFade {
     0% {
-        max-height:0px;
+        transform: scaleY(0);
         opacity: 0;
         letter-spacing: 0px;
-        padding-left: 0px;
+        text-indent: initial;
     }
     60% {
-        max-height:0px;
+        transform: scaleY(0);
         opacity: 0;
         letter-spacing: 0px;
-        padding-left: 0px;
+        text-indent: initial;
     }
     80% {
-        max-height:200px;
+        transform: scaleY(1);
         letter-spacing: 0px;
-        padding-left: 0px;
+        text-indent: initial;
     }
     100% {
-        max-height:200px;
-        letter-spacing: 70px;
-        padding-left: 58px;
+        letter-spacing: 1em;
+        text-indent: 1em;
+    }
+}
+@keyframes fadeTop{
+    0% {
+        transform: translateY(50%);
+    }
+    60% {
+        transform:  translateY(50%);
+    }
+    80% {
+        transform: translateY(0%);
     }
 }
 
-.background{
-    background: 50% 50% / cover;
-    background-image:url("../img/index.jpg");
-    background-size:cover;
+@keyframes fadeBottom{
+    0% {
+        transform: translateY(-50%);
+    }
+    60% {
+        transform:  translateY(-50%);
+    }
+    80% {
+        transform: translateY(0%);
+    }
+}
+
+.wrap{
+    margin:0 auto;
+    background:rgba(0,0,0,0.5);
+}
+
+.titles h1 span{
+    color:white;
+    overflow:hidden;
+    display:inline-block;
+    height:auto;
+    font-family: inherit;
+    white-space:pre;
+}
+.titles h1 span.newline{
+    display:block;
+    padding: 0px;
+    margin: -0.1em;
+}
+.titles h1 span.nickname{
+    animation: nicknameFade 1s ease;
+    opacity: 0.5;
+    font-family: 'GeosansLight';
+    letter-spacing: 1em;
+    text-indent: 1em;
+
+}
+.titles h1 span.topname{
+    animation: fadeTop 1s ease
+}
+.titles h1 span.bottomname{
+    animation: fadeBottom 1s ease
 }
 
 .quicklinks{
-    margin-top:-10vh;
+    position: absolute;
+    bottom:10vh;
     width:100%;
     text-align:center;
-    margin-bottom:0px;
 }
 
 .quicklinks img,.quicklinks div{
@@ -50,9 +99,10 @@
     cursor:pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    .titles h1 span.nickname{
-        animation: none;
-        color:#dde;
+
+@media only screen and (max-height: 600px) {
+    .quicklinks{
+        position: static;
+        margin-top:-18vh;
     }
 }
