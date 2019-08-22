@@ -10,6 +10,7 @@
     border-bottom: 1px solid #eee;
 }
 
+
 .about article:last-of-type{
     border-bottom: none;
 }
@@ -41,6 +42,7 @@
 .about_image{
     grid-area: image;
 }
+
 
 @media only screen and (max-width: 1024px) {
     
