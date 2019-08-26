@@ -85,18 +85,34 @@
 .mooierdanemma{
     background:rgb(87, 140, 209);
     color:white;
-    padding: 4px 40px;
+    display:block;
+    padding: 12px 40px;
     height:48px;
     border-radius:24px;
     border:none;
     font-weight: bold;
     display:block;
-    animation: emma 1s ease-in-out;
     white-space: nowrap;
 
     text-transform: uppercase;
+    text-decoration: none;
+
+    text-align:center;
+    font-size:14px;
 
     min-width:200px;
+    width:256px;
+    
+    animation: emma 0.5s ease-in-out;
+}
+.mooierdanemma:active{
+    color:white;
+}
+.mooierdanemma:hover{
+    color:white;
+}
+.mooierdanemma:visited{
+    color:white;
 }
 .mooierdanemma:focus{
     outline:none;
@@ -108,19 +124,13 @@
 
 @keyframes emma{
     0%{
-        max-width: 48px;
         color:rgba(0,0,0,0);
-        padding:4px 0px;
+        padding:12px 0px;
+        min-width: 0px;
     }
     50%{
-        max-width: 48px;
         color:rgba(0,0,0,0);
-        padding:4px 0px;
-    }
-    100%{
-        max-width: 1024px;
-        color:rgba(255,255,255,1);
-        padding:4px 40px;
+        padding:12px 0px;
     }
 }
 

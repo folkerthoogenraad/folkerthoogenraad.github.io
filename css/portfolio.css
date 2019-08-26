@@ -55,7 +55,7 @@
 }
 
 .portfolio.panel:hover{
-    flex:2 0;
+    flex:1.2 0;
     color:white;
     cursor: pointer;
 }
@@ -76,6 +76,10 @@
 .tres{
     background:url('../img/about_music.jpg');
     background-size:auto 200%;
+}
+
+.portfolio_content .mooierdanemma{
+    margin:0 auto;
 }
 
 .portfolio_content{
