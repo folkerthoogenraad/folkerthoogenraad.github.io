@@ -22,6 +22,7 @@
     }
 }
 
+
 @keyframes fadeTop{
     0% {
         transform: translateY(50%);
