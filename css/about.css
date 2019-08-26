@@ -1,3 +1,10 @@
+.about{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 70px;
+    padding-bottom:20px;
+}
+
 .about article{
     width:100%;
 
@@ -5,9 +12,34 @@
     grid-gap: 20px;
 
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
 
-    border-bottom: 1px solid #eee;
+    border-bottom: 0px solid #333;
+    margin-bottom:20px;
+}
+.about_title{
+    position: absolute;
+    z-index: -1;
+
+    top:0;
+    left:24px;
+
+    transform:  translateY(-77%);
+    /*transform: translateY(-50%);*/
+
+    font-size: 70px;
+    color:white;
+    text-align: center;
+    font-family: 'Lemon/Milk', sans-serif;
+    font-weight: 100;
+    padding:0;
+    margin:0;
+
+    animation:aboutTitleFade 1s ease-in-out;
+}
+.about_title.clipped{
+    color:gray;
+    clip-path: inset(50% 0 0 0);
 }
 
 
@@ -18,21 +50,21 @@
 .about article{
     grid-template-areas: "image content";
 }
-.about article:nth-of-type(2n){
-    grid-template-areas: "content image";
-}
 
-.about{
-    overflow: hidden;
-    margin-bottom: 20px;
-}
+/*.about article:nth-of-type(2n){
+    grid-template-areas: "content image";
+}*/
 
 .about article section{
     margin:20px;
 }
 
+.about article section p{
+    margin-top:0px;
+}
+
 .about article section img{
-    height:260px;
+    height:400px;
     width:auto;
 }
 
@@ -41,6 +73,64 @@
 }
 .about_image{
     grid-area: image;
+}
+.about_image img{
+    border-radius: 50%;
+}
+
+
+.invert{
+    filter:invert(1);
+}
+.mooierdanemma{
+    background:rgb(87, 140, 209);
+    color:white;
+    padding: 4px 40px;
+    height:48px;
+    border-radius:24px;
+    border:none;
+    font-weight: bold;
+    display:block;
+    animation: emma 1s ease-in-out;
+    white-space: nowrap;
+
+    text-transform: uppercase;
+
+    min-width:200px;
+}
+.mooierdanemma:focus{
+    outline:none;
+}
+.mooierdanemma.disabled{
+    background:gray;
+    cursor:not-allowed;
+}
+
+@keyframes emma{
+    0%{
+        max-width: 48px;
+        color:rgba(0,0,0,0);
+        padding:4px 0px;
+    }
+    50%{
+        max-width: 48px;
+        color:rgba(0,0,0,0);
+        padding:4px 0px;
+    }
+    100%{
+        max-width: 1024px;
+        color:rgba(255,255,255,1);
+        padding:4px 40px;
+    }
+}
+
+@keyframes aboutTitleFade{
+    from{
+        transform:none;
+    }
+    70%{
+        transform: none;
+    }
 }
 
 
@@ -53,5 +143,22 @@
     .about article:nth-of-type(2n){
         grid-template-areas: "image"
          "content";
+    }
+    .about{
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    
+    .about article section img{
+        height:300px;
+        width:auto;
+    }
+
+    .about{
+        padding: 0px;
+    }
+    .about_title{
+        font-size:50px;
     }
 }

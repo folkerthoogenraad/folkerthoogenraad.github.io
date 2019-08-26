@@ -1,86 +1,72 @@
-<img class="background background_fade" src="img/BackgroundAeronauts.png" alt="" />
+<img class="background" src="img/index.jpg" alt="" />
 
-<div class="titles fade jump spacer">
-    <div class="wrap">
-        <h1 class="outline">Some things I made</h1>
-        <h2 class="outline">Maybe you'll like it</h2>
-    </div>
+<div class="spacer">
 </div>
 
-<div class="content ">
-    <h1 class="title">Games</h1>
-    <p class="text">My true passion lies in making games. It's just what I do.</p>
-    <div class="articles fade jump">
-        <article>
-            <h1>Aeronauts</h1>
-            <a href="http://justf.net/aeronauts-website"><img class="cover" src="img/covers/AeronautsCover.png" alt=""></a>
-            <p>A game I'm working on. <a href="http://justf.net/aeronauts-website">Click here to go to the project website</a></p>
-        </article>
-        <article>
-            <h1>Jump Off</h1>
-            <a href="https://youtu.be/wLLT_p9wE3c"><img class="cover" src="img/covers/JumpOffCover.png" alt=""></a>
-            <p>One of the few games that I finished and published. A very simple 2D arcade game for Android. <a href="https://play.google.com/store/apps/details?id=net.justf.jumpoff">You can download it here.</a></p>
-        </article>
-        <article>
-            <h1>Rogue Pixels</h1>
-            <img class="cover" src="img/covers/RoguePixelsCover.png" alt="">
-            <p>A game I'm passivly working on. It's a GTA like game with PS1 retro graphics <i>(I really love the art in this project)</i></p>
-        </article>
-        <article>
-            <h1>Jump On</h1>
-            <a href="https://www.youtube.com/watch?v=59_1QUUWpWg"><img class="cover" src="img/covers/JumpOnCover.png" alt=""></a>
-            <p>A platformer with nice relaxing ambiance for four player cooperative gameplay.</p>
-        </article>
-        <article>
-            <h1>BBQ Escape</h1>
-            <a href="https://steynpotze.github.io/bbqescape"><img class="cover" src="img/covers/BBQEscapeCover.png" alt=""></a>
-            <p>A game I made with a few of my friends for a school project. It's really not a great game, but it was really fun to work on.</p>
-        </article>
-        <article>
-            <h1>Signal</h1>
-            <a href="https://youtu.be/qXsOmIaGNsE"><img class="cover" src="img/covers/SignalCover.png" alt=""></a>
-            <p>A GameJam project made in 2018 made with two of my friends. Click the image for a video presentation.</p>
-        </article>
-    </div>
-    
-    <h1 class="title">Software</h1>
-    <p class="text">I also made some really cool software, check it out.</p>
-    <div class="articles">
-        <article>
-            <h1>Redji Script</h1>
-            <a href="https://github.com/folkerthoogenraad/RedjiScript"><img class="cover" src="img/covers/RedjiScriptCover.png" alt=""></a> 
-            <p>A work in progress scripting language. It's one of my many toy languages to satisfy my compiler building needs</p>
-        </article>
-        <article>
-            <h1>Apryx Engine</h1>
-            <a href="https://github.com/folkerthoogenraad/ApryxEngine"><img class="cover" src="img/covers/ApryxEngineCover.png" alt=""></a> 
-            <p>A (mainly) 2D game engine written in C++. It's mostly used by myself and not really production ready at this moment.</p>
-        </article>
+<div class="content fade upjump">
+    <div class="portfolio_base">
+        <div class="about_title">Portfolio</div>
+        <div class="portfolio panels">
+            <div onclick="portfolioClick(this, 'portfolio_games')" class="portfolio panel selected uno"><span>Games</span></div>
+            <div onclick="portfolioClick(this, 'portfolio_software')" class="portfolio panel dos"><span>Software</span></div>
+            <div onclick="portfolioClick(this, 'portfolio_music')" class="portfolio panel tres"><span>Music</span></div>
+        </div>
+        
+        <div class="portfolio_content selected" id="portfolio_games">
+            <article>
+                <section><img src="img/covers/AeronautsCover.png" alt=""></section>
+                <section><p>AERONAUTS is a four player coop game to play on the couch with your friends.</p><button class="mooierdanemma">Find out more</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/JumpOffCover.png" alt=""></section>
+                <section><p>JumpOff is an simple, yet addicting, Android game.</p><button class="mooierdanemma">Download</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/JumpOnCover.png" alt=""></section>
+                <section><p>The Island is a platformer game, it is still in development </p><button class="mooierdanemma disabled">Unavailable</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/RoguePixelsCover.png" alt=""></section>
+                <section><p>Rogue Pixels is an 80s retro 3d game with PS1 like graphics. It is still in development. </p> <button class="mooierdanemma disabled">Unavailable</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/SignalCover.png" alt=""></section>
+                <section><p>Signal is a game me and my friends made for the global gamejam in 2018 </p> <button class="mooierdanemma">Watch the gameplay</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/SignalCover.png" alt=""></section>
+                <section><p>The Wait is a game me and my friends made for the global gamejam in 2019  </p><button class="mooierdanemma">Watch the gameplay</button> </section>
+            </article>
+        </div>
+        
+        <div class="portfolio_content" id="portfolio_software">
+            <article>
+                <section><img src="img/covers/ApryxEngineCover.png" alt=""></section>
+                <section><p>ApryxEngine is an open source 2D game engine written in C++</p><button class="mooierdanemma">View the source</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/RedjiScriptCover.png" alt=""></section>
+                <section><p>RedjiScript is an open source toy language compiler based on the Swift programming language.
+                    It started as bet with my friends that I couldn't write a swift compiler for Windows&trade;. Turned out, I couldn't.
+                </p><button class="mooierdanemma">View the source</button></section>
+            </article>
+        </div>
+
+        <div class="portfolio_content" id="portfolio_music">
+            <article>
+                <section><img src="img/covers/PianoCover.png" alt=""></section>
+                <section><p>In my spare time I like to compose music for the piano. These are some of my finest pieces.</p><button class="mooierdanemma">Listen now</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/SynthwaveCover.jpg" alt=""></section>
+                <section><p>I also like creating Synthwave music.</p><button class="mooierdanemma">Listen now</button></section>
+            </article>
+            <article>
+                <section><img src="img/covers/bitterballen.JPG" alt=""></section>
+                <section><p>I like other genres too, like Drum and Bass, Chillhop, Techno, etc. I got many tracks in those styles as well.</p><button class="mooierdanemma">Listen now</button></section>
+            </article>
+        </div>
     </div>
 
-    
-    <h1 class="title">Music</h1>
-    <p class="text">As a musician I make music in many different genres and usually upload them to my <a href="https://soundcloud.com/justf-548447368">SoundCloud</a></p>
-    <div class="articles">
-        <article>
-            <h1>Classical Piano</h1>
-            <a href="https://soundcloud.com/justf-548447368/sets/compositions"><img class="cover" src="img/covers/PianoCover.png" alt=""></a> 
-            <p>A playlist filled with some classical piano pieces I composed</p>
-        </article>
-        <article>
-            <h1>Synthwave</h1>
-            <a href="https://soundcloud.com/justf-548447368/sets/synthwave"><img class="cover" src="img/covers/SynthwaveCover.jpg" alt=""></a> 
-            <p>An example of some of the synthwave and chiptune music I make</p>
-        </article>
-        <article>
-            <h1>Drum and Bass</h1>
-            <a href="https://soundcloud.com/justf-548447368/drum-and-bass"><img class="cover" src="img/covers/Bitterballen.JPG" alt=""></a> 
-            <p>One of the genres I sometimes sidestep into is Drum and Bass, hope you like it!</p>
-        </article>
-    </div>
-    
-    <footer>
-        &copy; Folkert Hoogenraad 2019
-    </footer>
     
 </div>
