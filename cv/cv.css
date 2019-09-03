@@ -33,6 +33,10 @@ body{
     --title-color: rgb(211, 144, 100);*/
 }
 
+.spacing{
+    line-height: 1.9em;
+}
+
 @font-face {
     font-family: 'Lemon/Milk';
     src: url('../font/LemonMilk.otf');
@@ -129,7 +133,7 @@ h2.name{
 
 p, ul{
     font-size:12px;
-    line-height:1.8em;
+    line-height:1.7em;
     color:var(--small-text-color);
 }
 h2{
@@ -188,8 +192,8 @@ li.subheading{
 }
 
 @page {
-    margin:40px;
-    background:red;
+	size: A4;
+	margin:0;
 }
 
 @media print{
