@@ -19,7 +19,7 @@ body{
     
     --background-color:white;
     --text-color: #444;
-    --small-text-color:#999;
+    --small-text-color:#666;
 
     --contrast-color:rgb(221, 231, 233);
     --title-color: rgb(73, 95, 141);
@@ -178,7 +178,7 @@ a{
 li.subheading{
     margin-left:-10px;
     margin-top:6px;
-    color:#bbb;
+    color:#aaa;
     font-style: italic;
 }
 
