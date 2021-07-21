@@ -1,7 +1,24 @@
 <html>
     <head>
-        <title>JustF - Black</title>
+        <title>JustF - Black (test)</title>
     </head>
     <body style="background:black;margin:0;padding:0;">
+        
+<script>
+
+async function test(url){
+	let v = await fetch(url);
+	let data = await v.json();
+	
+	console.log("URL Succeded " + url);
+}
+
+document.addEventListener("DOMContentLoaded", ()=>{
+	test("https://api.brickk.nl/shop-api/taxons/");
+	test("https://api.brickk.nl/shop-api/postal-codes");
+	test("https://api.brickk.nl/shop-api/breadbox/size");
+});
+
+</script>
     </body>
 </html>
